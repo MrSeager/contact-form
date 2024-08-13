@@ -24,7 +24,7 @@ const FormPart: FC<FormPartProps> = ({ validated, handleSubmit, handleCheck, che
                 <h1 className='cs-fw-7 cs-tc-grey-2'>Contact Us</h1>
                 <Form noValidate validated={validated} onSubmit={handleSubmit} className='w-100'>
                     <Row className='cs-row-gap'>
-                        <Form.Group as={Col} xs={6} controlId='validationCustom01'>
+                        <Form.Group as={Col} xs={12} lg={6} controlId='validationCustom01'>
                             <Form.Label className='cs-tc-grey-2'>First Name <span className='cs-tc-grey'>*</span></Form.Label>
                             <Form.Control
                                 required
@@ -34,7 +34,7 @@ const FormPart: FC<FormPartProps> = ({ validated, handleSubmit, handleCheck, che
                                 />
                             <Form.Control.Feedback type="invalid" className='cs-fs'>This field is required</Form.Control.Feedback>
                         </Form.Group>
-                        <Form.Group as={Col} xs={6} controlId='validationCustom02'>
+                        <Form.Group as={Col} xs={12} lg={6} controlId='validationCustom02'>
                             <Form.Label className='cs-tc-grey-2'>Last Name <span className='cs-tc-grey'>*</span></Form.Label>
                             <Form.Control
                                 required

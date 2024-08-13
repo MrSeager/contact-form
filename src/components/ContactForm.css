@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+body {
+    font-family: 'Karla', sans-serif !important;
+}
+
+.cs-h {
+    min-height: 100vh;
+}
+
+.cs-h-2 {
+    height: 150px !important;
+}
+
+.cs-w {
+    width: 50% !important;
+}
+
+.cs-row-gap {
+    row-gap: 1rem;
+}
+
+/*Border*/
+.cs-bc {
+    border-color: hsl(187, 24%, 22%) !important;
+    transition: .3s !important;
+    box-shadow: none !important;
+}
+
+.cs-bc:hover, .cs-bc:focus {
+    border-color: hsl(186, 15%, 59%) !important;
+}
+
+.was-validated .cs-bc:invalid {
+    border-color: hsl(0, 66%, 54%) !important; /* Change this to your desired invalid color */
+}
+
+/*Check-Boxes*/
+.cs-radio {
+    border: solid 2px hsl(187, 24%, 22%);
+    transition: .3s !important;
+}
+
+.cs-radio:hover {
+    border-color: hsl(186, 15%, 59%) !important;
+}
+
+.cs-radio input {
+    box-shadow: none !important;
+    border: solid 2px hsl(187, 24%, 22%);
+    position: relative;
+}
+
+.cs-radio input:checked {
+    background-color: transparent !important;
+    border-color: hsl(169, 82%, 27%) !important;
+}
+
+.cs-radio .form-check-label {
+    width: 100% !important;
+    height: 100% !important;
+    cursor: pointer;
+}
+
+.cs-radio.invalid {
+    border-color: red !important;
+}
+
+.cs-radio.checked {
+    background-color: hsl(148, 38%, 91%) !important;
+}
+
+.cs-radio .form-check-input:checked::after {
+    content: '';
+    width: 70% !important;
+    aspect-ratio: 1 / 1 !important;
+    background-color: hsl(169, 82%, 27%);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cs-checkbox input {
+    box-shadow: none !important;
+    border: solid 2px hsl(187, 24%, 22%);
+    position: relative;
+}
+
+.cs-checkbox input:checked {
+    background-color: hsl(169, 82%, 27%) !important;
+    border-color: hsl(169, 82%, 27%) !important;
+}
+
+.cs-checkbox input:focus {
+    border-color: hsl(169, 82%, 27%) !important;
+}
+
+/*Background*/
+.cs-bg {
+    background-color: hsl(148, 38%, 91%) !important;
+}
+
+.was-validated .cs-bg-2 {
+    background-color: hsl(148, 38%, 91%) !important;
+}
+
+.cs-bg-2 {
+    background-color: hsl(187, 24%, 22%) !important;
+}
+
+/*Text*/
+.cs-fw-7 {
+    font-weight: 700 !important;
+}
+
+.cs-tc-grey {
+    color: hsl(186, 15%, 59%) !important;
+}
+
+.cs-tc-grey-2, .form-check-label{
+    color: hsl(187, 24%, 22%) !important;
+}
+
+.cs-fs {
+    font-size: 15px !important;
+}
+
+/*Button*/
+.cs-btn {
+    background-color: hsl(169, 82%, 27%) !important;
+    transition: .3s !important;
+}
+
+.cs-btn:hover {
+    background-color: hsl(169, 82%, 17%) !important;
+}
+
+/*Alert*/
+.cs-alert {
+    width: 30% !important;
+    position: absolute !important;
+    top: 3%;
+    z-index: 5 !important;
+}
+
+@media (max-width: 921px) {
+    .cs-w {
+        width: 95% !important;
+    }
+
+    .cs-alert {
+        width: 95% !important;
+    }
+}
